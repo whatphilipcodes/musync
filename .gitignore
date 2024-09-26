@@ -36,3 +36,6 @@ poetry.lock
 .pytest_cache/
 .coverage
 .tox/
+
+# OS
+.DS_Store
