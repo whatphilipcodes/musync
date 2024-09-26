@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "musync"
+version = "0.1.0"
+description = "Simple plugin to allow the output of the beets importer to automatically be synced to Apple's Music app."
+authors = ["whatphilipcodes <hello@whatphilipdoes.com>"]
+readme = "README.md"
+
+packages = [{ include = "beetsplug" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+beets = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
