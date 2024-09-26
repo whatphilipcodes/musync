@@ -11,8 +11,8 @@ class Musync(plugins.BeetsPlugin):
         self.register_listener("item_removed", self.delete_task)
 
     def import_task(self, task: ImportTask):
-        for path in task.paths:
-            posix = displayable_path(path)
+        for item in task.imported_items():
+            posix = displayable_path(item.path)
             self._log.info("Adding '" + posix + "' to Music App...")
 
             # AppleScript to import a track
